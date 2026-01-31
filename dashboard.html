@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الإدارة - شركة الهدير</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>لوحة الإدارة</h1>
+    </header>
+
+    <main>
+        <form id="addForm" class="dashboard-form">
+            <h2>اضافة عقد جديد أو صورة</h2>
+            <input type="text" id="title" placeholder="العنوان" required>
+            <input type="text" id="desc" placeholder="الوصف" required>
+            <input type="file" id="imgFile" accept="image/*">
+            <button type="submit">اضافة</button>
+        </form>
+
+        <h2>العناصر الحالية</h2>
+        <div id="dashboardItems" class="dashboard-items"></div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

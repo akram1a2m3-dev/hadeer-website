@@ -1,0 +1,123 @@
+/* === Reset بسيط === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === الوضع المظلم === */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    color: #ffca28;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #b0bec5;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: #ffca28;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #ffca28;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul li {
+    background-color: #1f1f1f;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+button, .btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #ffca28;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffc107;
+}
+
+/* === Cards === */
+.itemCard, .dashboard-items div {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    display: inline-block;
+}
+
+.itemCard img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* === Dashboard form === */
+.dashboard-form input[type="text"], .dashboard-form input[type="file"] {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .itemCard, .dashboard-items div {
+        width: 90%;
+    }
+    header, main {
+        padding: 15px;
+    }
+}
